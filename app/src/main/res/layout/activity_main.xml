@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:stretchColumns="*"
     tools:context=".MainActivity">
 
     <TextView
@@ -11,7 +12,8 @@
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:layout_weight="1"
-        android:text="\n0 "
+        android:text="0"
+        android:padding="30dp"
         android:gravity="right"
         android:textColor="#FFFFFF"
         android:background="#808080"
@@ -23,54 +25,56 @@
         android:layout_height="match_parent" >
         <Button
             android:id="@+id/btnAC"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="6"
+            android:layout_span="3"
+            android:textColor="@color/black"
             android:backgroundTint="#d6d6d6"
             android:text="AC" />
         <Button
             android:id="@+id/btnDivide"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
+            android:layout_span="1"
             android:backgroundTint="#FF8300"
-            android:onClick="btnOperatorOnClick"
             android:text="/" />
     </TableRow>
     <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
         <Button
             android:id="@+id/btn7"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
+            android:layout_span="1"
             android:backgroundTint="#d6d6d6"
             android:onClick="btnOnClick"
+            android:textColor="@color/black"
             android:text="7" />
         <Button
             android:id="@+id/btn8"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
+            android:layout_span="1"
             android:backgroundTint="#d6d6d6"
             android:onClick="btnOnClick"
+            android:textColor="@color/black"
             android:text="8" />
         <Button
             android:id="@+id/btn9"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
+            android:layout_span="1"
             android:backgroundTint="#d6d6d6"
             android:onClick="btnOnClick"
+            android:textColor="@color/black"
             android:text="9" />
         <Button
             android:id="@+id/btnMultiply"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
+            android:layout_span="1"
             android:backgroundTint="#FF8300"
-            android:onClick="btnOperatorOnClick"
             android:text="*" />
     </TableRow>
     <TableRow
@@ -78,35 +82,37 @@
         android:layout_height="match_parent" >
         <Button
             android:id="@+id/btn4"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
+            android:layout_span="1"
             android:backgroundTint="#d6d6d6"
             android:onClick="btnOnClick"
+            android:textColor="@color/black"
             android:text="4" />
         <Button
             android:id="@+id/btn5"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
+            android:layout_span="1"
             android:backgroundTint="#d6d6d6"
             android:onClick="btnOnClick"
+            android:textColor="@color/black"
             android:text="5" />
         <Button
             android:id="@+id/btn6"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
+            android:layout_span="1"
+            android:textColor="@color/black"
             android:backgroundTint="#d6d6d6"
             android:onClick="btnOnClick"
             android:text="6" />
         <Button
             android:id="@+id/btnSub"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
+            android:layout_span="1"
             android:backgroundTint="#FF8300"
-            android:onClick="btnOperatorOnClick"
             android:text="-" />
     </TableRow>
     <TableRow
@@ -114,63 +120,67 @@
         android:layout_height="match_parent" >
         <Button
             android:id="@+id/btn1"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
+            android:layout_span="1"
             android:backgroundTint="#d6d6d6"
+            android:textColor="@color/black"
             android:onClick="btnOnClick"
             android:text="1" />
         <Button
             android:id="@+id/btn2"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
+            android:layout_span="1"
             android:backgroundTint="#d6d6d6"
+            android:textColor="@color/black"
             android:onClick="btnOnClick"
             android:text="2" />
         <Button
             android:id="@+id/btn3"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
+            android:layout_span="1"
             android:onClick="btnOnClick"
+            android:textColor="@color/black"
             android:backgroundTint="#d6d6d6"
             android:text="3" />
         <Button
             android:id="@+id/btnPlus"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
+            android:layout_span="1"
             android:backgroundTint="#FF8300"
-            android:onClick="btnOperatorOnClick"
             android:text="+" />
-    </TableRow><TableRow
+    </TableRow>
+    <TableRow
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
     <Button
         android:id="@+id/btn0"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="3"
+        android:layout_span="2"
         android:backgroundTint="#d6d6d6"
+        android:textColor="@color/black"
         android:onClick="btnOnClick"
         android:text="0" />
     <Button
         android:id="@+id/btnDot"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="2"
+        android:layout_span="1"
+        android:textColor="@color/black"
         android:backgroundTint="#d6d6d6"
         android:onClick="btnOnClick"
         android:text="." />
 
     <Button
         android:id="@+id/btnEqual"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="3"
+        android:layout_span="1"
         android:backgroundTint="#FF8300"
-        android:onClick="btnOperatorOnClick"
         android:text="=" />
 </TableRow>
 
